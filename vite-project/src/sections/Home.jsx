@@ -1,7 +1,7 @@
 import React from 'react';
 import { Element, Link } from 'react-scroll';
 import Typewriter from 'typewriter-effect';
-import { HiArrowDown } from 'react-icons/hi';
+import { HiArrowDown, HiDownload } from 'react-icons/hi';
 import profileImage from '../assets/propic.jpg';
 
 const Home = () => {
@@ -78,7 +78,7 @@ const Home = () => {
             </p>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start flex-wrap">
               <Link
                 to="projects"
                 smooth={true}
@@ -91,6 +91,19 @@ const Home = () => {
                   <HiArrowDown className="text-white group-hover:translate-y-1 transition-transform" />
                 </div>
               </Link>
+              
+              {/* Download CV Button */}
+              <a
+                href="/Chameera_Chathuranga_CV.pdf"
+                download="Chameera_Chathuranga_CV.pdf"
+                className="group relative cursor-pointer"
+              >
+                <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-xl blur opacity-0 group-hover:opacity-60 transition duration-300" />
+                <div className="relative px-8 py-4 bg-white/5 border border-white/10 hover:bg-white/10 hover:border-purple-500/50 rounded-xl flex items-center justify-center gap-2 transition-all duration-300">
+                  <span className="text-white font-semibold">Download CV</span>
+                  <HiDownload className="text-white group-hover:translate-y-1 transition-transform" />
+                </div>
+              </a>
               
               <Link
                 to="contact"
