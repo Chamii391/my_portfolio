@@ -7,6 +7,9 @@ import catDogImage from '../assets/clasifire.png';
 import churnImage from '../assets/churm.png';
 import cardioImage from '../assets/heart.png';
 import stockImage from '../assets/stock.png';
+import mindEmotionImage from '../assets/emotion.png';
+import agroMindImage from '../assets/agroai.png';
+import shoeMartImage from '../assets/shoe.png';
 
 const Projects = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -34,8 +37,67 @@ const Projects = () => {
   }, []);
 
   const projects = [
+
+
     {
       id: 1,
+      title: "MindEmotion",
+      tags: [
+        "TensorFlow",
+        "Transformers",
+        "Groq LLM",
+        "Flask",
+        "React",
+        "Generative AI"
+      ],
+      description:
+        "AI-powered mental health support system featuring emotion analysis, a supportive chatbot, coping strategy generation, and calming image generation using deep learning and generative AI.",
+      image: mindEmotionImage,
+      github: "https://github.com/Chamii391/Mind_Imotion"
+    }
+    ,
+      {
+      id: 2,
+      title: "AgroMind",
+      tags: [
+        "Scikit-learn",
+        "XGBoost",
+        "TensorFlow / Keras (CNN)",
+        "Flask",
+        "React",
+        "Tailwind CSS",
+        "Generative AI (Agri Chatbot)"
+      ],
+      description:
+        "AI-powered smart agriculture platform providing crop suitability prediction, plant disease detection from leaf images, crop yield prediction, smart irrigation recommendations using real-time weather data, and an agriculture-focused AI chatbot for reliable farming guidance.",
+      image: agroMindImage,
+      github: "https://github.com/Chamii391/AgroMind-AI"
+}
+,
+
+      {
+        id: 3,
+        title: "ShoeMart",
+        tags: [
+          "React",
+          "Node.js",
+          "Express.js",
+          "Flask (AI Microservice)",
+          "SQL Server",
+          "JWT Authentication",
+          "AI Chatbot",
+          "Generative AI (Product Content)"
+        ],
+        description:
+          "Smart shoe retail management system supporting online and in-store sales with real-time inventory synchronization. Includes WhatsApp-based ordering, delivery tracking, admin dashboards, and POS system integration. Features a Flask-based AI service for chatbot support and automatic product name and description generation to enhance product management.",
+        image: shoeMartImage,
+        github: "https://github.com/Chamii391/ShoeMart-Web"
+      }
+,
+
+    
+    {
+      id: 4,
       title: "AgroConnect",
       tags: ["MongoDB", "Express", "React", "Node.js"],
       description: "Digital platform connecting farmers with buyers and government agencies for agricultural commerce.",
@@ -43,7 +105,7 @@ const Projects = () => {
       github: "https://github.com/SE02-SAD-Group-Project2025/AgroConnect"
     },
     {
-      id: 2,
+      id: 5,
       title: "Laptop Price Predictor",
       tags: ["Python", "Machine Learning", "Scikit-learn"],
       description: "A machine learning project that predicts laptop prices based on features like brand, specs, and condition.",
@@ -51,7 +113,7 @@ const Projects = () => {
       github: "https://github.com/Chamii391/Laptop-price-Predictor"
     },
     {
-      id: 3,
+      id: 6,
       title: "Cat vs Dog Classifier",
       tags: ["TensorFlow", "CNN", "Streamlit"],
       description: "Deep learning CNN model that classifies images as cats or dogs with a Streamlit web app.",
@@ -59,7 +121,7 @@ const Projects = () => {
       github: "https://github.com/Chamii391/catdog-classifier-app"
     },
     {
-      id: 4,
+      id: 7,
       title: "Customer Churn Prediction",
       tags: ["TensorFlow", "Keras", "Streamlit"],
       description: "Deep learning model that predicts whether a customer is likely to churn, deployed as Streamlit app.",
@@ -67,7 +129,7 @@ const Projects = () => {
       github: "https://github.com/Chamii391/customer-churn-prediction"
     },
     {
-      id: 5,
+      id: 8,
       title: "Heart Disease Prediction",
       tags: ["TensorFlow", "Flask", "API"],
       description: "Deep learning-based API that predicts heart disease risk using the Cardio dataset.",
@@ -75,7 +137,7 @@ const Projects = () => {
       github: "https://github.com/Chamii391/heart-disease-prediction-api"
     },
     {
-      id: 6,
+      id: 9,
       title: "Stock Market Prediction",
       tags: ["RNN", "LSTM", "TensorFlow"],
       description: "Deep learning model using RNN/LSTM to forecast stock prices from historical market data.",
